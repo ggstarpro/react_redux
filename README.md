@@ -10,9 +10,13 @@ Store:State(以前の状態0ドルが)と、10ドル補充するというAction�
 ※ Storeをどのコンポーネントでも使えるようにするのはStoreのみ。、DispatchとかEventHandlerではない。
 
 ## [環境構築](https://redux.js.org/introduction/getting-started)
-$ npx create-react-app react_redux
-$ npm install react-redux
-$ npm i redux
+### 生のredux学習
+`$ npx create-react-app react_redux`
+`$ npm install react-redux`
+`$ npm i redux`
+
+### ReduxToolkit学習
+https://github.com/ggstarpro/react_redux_toolkit
 
 ## [Redux dev Tools](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=ja)
 - [redux dev tools extension](https://github.com/zalmoxisus/redux-devtools-extension)
