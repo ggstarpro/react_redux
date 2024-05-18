@@ -1,3 +1,36 @@
+# Redux
+## 概要
+Reduxは1カ所で状態管理を行うことで楽にすること
+
+## [仕組み](https://redux.js.org/tutorials/essentials/part-1-overview-concepts#redux-application-data-flow)
+State: お財布の中身が0
+UI: お金を10ドル補充するボタンを押下
+EventHandler: お財布の中に10ドル補充するEvent(Action)をStoreにDispatch(通知)する
+Store:State(以前の状態0ドルが)と、10ドル補充するというActionがReducer(変更する)に来て、Stateが10ドルに変わる
+※ Storeをどのコンポーネントでも使えるようにするのはStoreのみ。、DispatchとかEventHandlerではない。
+
+## [環境構築](https://redux.js.org/introduction/getting-started)
+$ npx create-react-app react_redux
+$ npm install react-redux
+$ npm i redux
+
+## [Redux dev Tools](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=ja)
+- [redux dev tools extension](https://github.com/zalmoxisus/redux-devtools-extension)
+1.1 Basic store
+```
+ const store = createStore(
+   reducer, /* preloadedState, */
++  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+ );
+```
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
